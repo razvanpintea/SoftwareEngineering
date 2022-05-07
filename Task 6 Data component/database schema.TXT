@@ -1,0 +1,63 @@
+CREATE TABLE loginDetails(
+username TEXT,
+password TEXT
+);
+
+CREATE TABLE Skill(
+skill TEXT
+);
+
+CREATE TABLE TechnicianSkill(
+technicianFirstName TEXT,
+technicianLastName TEXT,
+skill TEXT
+);
+
+CREATE TABLE CompletedTasks(
+firstName TEXT,
+lastName TEXT,
+task TEXT,
+motor TEXT
+);
+
+CREATE TABLE Technician (
+firstName TEXT,
+lastName TEXT,
+available TEXT
+);
+
+CREATE TABLE Motor(
+customer TEXT,
+serial TEXT,
+arrivalDate TEXT,
+price INT,
+repairable TEXT,
+time TEXT,
+assignedTasks INT,
+completedTasks INT
+);
+
+CREATE TABLE TaskMotor(
+serial TEXT,
+customer TEXT,
+task TEXT,
+skill TEXT,
+techniciansNeeded INT,
+ready TEXT,
+technicianAssigned TEXT,
+urgency TEXT,
+duration INT,
+date TEXT,
+overdue TEXT
+);
+
+CREATE TABLE AssignedTasks(
+task TEXT,
+serial TEXT,
+customer TEXT,
+technicianFirst TEXT,
+technicianLast TEXT,
+urgency TEXT,
+dateExpected TEXT,
+duration TEXT
+);

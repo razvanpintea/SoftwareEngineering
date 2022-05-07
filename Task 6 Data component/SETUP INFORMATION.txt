@@ -1,0 +1,9 @@
+The following commands are required to be ran on the database once in order for the program to properly be set up and function
+
+INSERT INTO Skill VALUES ('Patience');
+INSERT INTO Skill VALUES ('Accuracy');
+INSERT INTO Skill VALUES ('Strength');
+
+INSERT INTO loginDetails (username, password) VALUES ('hr', 'hr');
+INSERT INTO loginDetails (username, password) VALUES ('admin', 'admin');
+INSERT INTO loginDetails (username, password) VALUES ('is', 'is');
